@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | SmartTransit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-shell">
+  <aside class="sidebar">
+    <div>
+      <div class="brand-mark">ST</div>
+      <h1>SmartTransit</h1>
+      <p>Resilient Tracker</p>
+    </div>
+    <nav class="sidebar-nav">
+      <a class="active" href="dashboard.html">Dashboard</a>
+      <a href="map.html">Live Map</a>
+      <a href="login.html" id="logoutButton">Logout</a>
+    </nav>
+  </aside>
+
+  <main class="content-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">College Transport Control</p>
+        <h2>Bus Operations Dashboard</h2>
+      </div>
+      <div class="status-row">
+        <span id="networkBadge" class="network-badge">Checking network</span>
+        <span id="syncBadge" class="sync-badge">Syncing</span>
+      </div>
+    </header>
+
+    <section class="search-strip">
+      <input id="busSearch" type="search" placeholder="Search buses, stops, routes">
+      <div class="search-note">Tap a bus card to open animated live tracking.</div>
+    </section>
+
+    <section class="dashboard-grid" id="busGrid"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

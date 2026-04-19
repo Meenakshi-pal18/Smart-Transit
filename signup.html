@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup | SmartTransit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-shell">
+  <div class="ambient ambient-left"></div>
+  <div class="ambient ambient-right"></div>
+
+  <main class="auth-layout">
+    <section class="auth-panel">
+      <a class="back-link" href="index.html">Back to Home</a>
+      <div class="badge">New rider setup</div>
+      <h1>Create your SmartTransit account</h1>
+      <p>Register once, then open the dashboard to monitor all campus buses in real time.</p>
+    </section>
+
+    <section class="form-card">
+      <form id="signupForm" class="form-stack">
+        <h2>Signup</h2>
+        <label>
+          <span>Full Name</span>
+          <input type="text" name="name" placeholder="Your name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" placeholder="student@college.edu" required>
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" name="password" placeholder="Create password" required minlength="6">
+        </label>
+        <button class="button button-primary" type="submit">Create Account</button>
+        <p class="form-hint">Already registered? <a href="login.html">Login here</a></p>
+        <p id="signupMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

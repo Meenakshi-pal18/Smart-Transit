@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartTransit Resilient Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-shell">
+  <div class="ambient ambient-left"></div>
+  <div class="ambient ambient-right"></div>
+
+  <main class="landing-shell">
+    <section class="hero-card">
+      <div class="badge">Low-bandwidth-first transport intelligence</div>
+      <h1>SmartTransit Resilient Tracker</h1>
+      <p>
+        A college transport tracking platform built to stay smooth, readable, and reliable even under
+        weak networks, delayed GPS updates, and connection drops.
+      </p>
+
+      <div class="hero-stats">
+        <article>
+          <strong>8</strong>
+          <span>Simulated buses</span>
+        </article>
+        <article>
+          <strong>ML ETA</strong>
+          <span>FastAPI + scikit-learn</span>
+        </article>
+        <article>
+          <strong>Offline</strong>
+          <span>Store-and-forward buffer</span>
+        </article>
+      </div>
+
+      <div class="hero-actions">
+        <a class="button button-primary" href="login.html">Login</a>
+        <a class="button button-ghost" href="signup.html">Create Account</a>
+      </div>
+    </section>
+
+    <section class="preview-card">
+      <div class="preview-glow"></div>
+      <div class="preview-top">
+        <span>Campus Transit Command</span>
+        <span class="signal-pill">Adaptive Sync</span>
+      </div>
+      <div class="mini-map">
+        <div class="route-line"></div>
+        <div class="route-stop stop-1"></div>
+        <div class="route-stop stop-2"></div>
+        <div class="route-stop stop-3"></div>
+        <div class="bus-dot"></div>
+      </div>
+      <div class="preview-list">
+        <div class="preview-item">
+          <span>Bus A1</span>
+          <strong>North Gate • 4 mins</strong>
+        </div>
+        <div class="preview-item">
+          <span>Bus B2</span>
+          <strong>Admin Block • 7 mins</strong>
+        </div>
+        <div class="preview-item">
+          <span>Bus C3</span>
+          <strong>Library • Weak Network</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
